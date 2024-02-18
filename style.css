@@ -1,256 +1,327 @@
-<!DOCTYPE html>
-<html lang="en">
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
-    <title>Document</title>
-</head>
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-<body>
-    <header class="shaddow">
-        <div id="first-line" class="flex">
-            <div id="fl-left" class="flex">
-                <span class="iconify" id="search-icon" data-icon="mdi-magnify"></span>
-                <input type="search" name="" id="search">
-            </div>
-            <div id="fl-right" class="flex">
-                <span id="bell" class="iconify" data-icon="mdi-bell-ring-outline"></span>
-                <img id="maca-small" class="maca" src="maca.webp" alt=""> Ted Mcclain
-            </div>
-        </div>
-        <div id="second-line" class="flex">
-            <img class="maca" src="maca.webp" alt="">
-            <div id="hi-name">
-                <p id="hi" class="bold">Hi there,</p>
-                <p id="name" class="bold">Ted Mcclain &#40;@mcclain&#41; </p>
-            </div>
-            <div id="header-buttons">
-                <button type="button">New</button>
-                <button type="button">Upload</button>
-                <button type="button">Share</button>
-            </div>
-        </div>
-    </header>
-    <nav>
-        <div id="logo">
-            <a href=""><span class="iconify" id="logo-icon" data-icon="mdi-view-dashboard"></span>Dashboard</a>
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
 
-        </div>
-        <div id="menu">
-            <ul>
+ol,
+ul {
+  list-style: none;
+}
 
-                <a href="">
-                    <li><span class="iconify" data-icon="mdi-home"></span>Home</li>
-                </a>
-                <a href="">
-                    <li><span class="iconify" data-icon="mdi-card-account-details-outline"></span>Profile</li>
-                </a>
-                <a href="">
-                    <li><span class="iconify" data-icon="mdi-message"></span>Messages</li>
-                </a>
-                <a href="">
-                    <li><span class="iconify" data-icon="mdi-clock-time-three"></span>History</li>
-                </a>
-                <a href="">
-                    <li><span class="iconify" data-icon="mdi-note-multiple"></span>Task</li>
-                </a>
-                <a href="">
-                    <li><span class="iconify" data-icon="mdi-account-group"></span>Communities</li>
-                </a>
-            </ul>
-        </div>
-        <div id="menu2">
-            <ul>
-                <a href="">
-                    <li><span class="iconify" data-icon="mdi-cog"></span>Settings</li>
-                </a>
-                <a href="">
-                    <li><span class="iconify" data-icon="mdi-help-box"></span>Support</li>
-                </a>
-                <a href="">
-                    <li><span class="iconify" data-icon="mdi-shield-check"></span>Privacy</li>
-                </a>
-            </ul>
-        </div>
-    </nav>
-    <main>
-        <div id="projects">
-            <p class="main-titles">Your Porjects</p>
-            <div id="projects-div">
-                <div class="project-card">
-                    <p class="pr-title">Super Cool Project</p>
-                    <p class="pr-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, dolorem porro? Nisi
-                        repudiandae tempora earum laboriosam accusantium!
-                    </p>
-                    <div class="pr-buttons">
-                        <a href="" class="pr-btn">
-                            <span class="iconify" data-icon="mdi-star-plus-outline"></span>
-                        </a>
-                        <a href="" class="pr-btn">
-                            <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
-                        </a>
-                        <a href="" class="pr-btn">
-                            <span class="iconify" data-icon="mdi-source-fork"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <p class="pr-title">Less Cool Project</p>
-                    <p class="pr-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dicta laboriosam. Aut
-                        temporibus impedit, in incidunt perferendis sint?
-                    </p>
-                    <div class="pr-buttons">
-                        <a href="" class="pr-btn">
-                            <span class="iconify" data-icon="mdi-star-plus-outline"></span>
-                        </a>
-                        <a href="" class="pr-btn">
-                            <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
-                        </a>
-                        <a href="" class="pr-btn">
-                            <span class="iconify" data-icon="mdi-source-fork"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <p class="pr-title">Impossible App</p>
-                    <p class="pr-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ad id animi minima esse sunt
-                        iure. Lorem, ipsum.
-                    </p>
-                    <div class="pr-buttons">
-                        <a href="" class="pr-btn">
-                            <span class="iconify" data-icon="mdi-star-plus-outline"></span>
-                        </a>
-                        <a href="" class="pr-btn">
-                            <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
-                        </a>
-                        <a href="" class="pr-btn">
-                            <span class="iconify" data-icon="mdi-source-fork"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <p class="pr-title">Easy Peasy App</p>
-                    <p class="pr-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquid fugit accusamus
-                        assumenda voluptas explicabo architecto?
-                    </p>
-                    <div class="pr-buttons">
-                        <a href="" class="pr-btn">
-                            <span class="iconify" data-icon="mdi-star-plus-outline"></span>
-                        </a>
-                        <a href="" class="pr-btn">
-                            <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
-                        </a>
-                        <a href="" class="pr-btn">
-                            <span class="iconify" data-icon="mdi-source-fork"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <p class="pr-title">Ad Blocker</p>
-                    <p class="pr-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro commodi autem nihil tempore
-                        labore, repudiandae nam exercitationem fuga.
-                    </p>
-                    <div class="pr-buttons">
-                        <a href="" class="pr-btn">
-                            <span class="iconify" data-icon="mdi-star-plus-outline"></span>
-                        </a>
-                        <a href="" class="pr-btn">
-                            <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
-                        </a>
-                        <a href="" class="pr-btn">
-                            <span class="iconify" data-icon="mdi-source-fork"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <p class="pr-title">Money Maker</p>
-                    <p class="pr-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda quos porro! Enim
-                        temporibus sequi consequatur ut explicabo! Lorem, ipsum dolor.
-                    </p>
-                    <div class="pr-buttons">
-                        <a href="" class="pr-btn">
-                            <span class="iconify" data-icon="mdi-star-plus-outline"></span>
-                        </a>
-                        <a href="" class="pr-btn">
-                            <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
-                        </a>
-                        <a href="" class="pr-btn">
-                            <span class="iconify" data-icon="mdi-source-fork"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div id="announcements">
-                <p class="main-titles">Announcements</p>
-                <div class="side-card">
-                    <p class="announcement">
-                        <span class="ann-title"></span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, nulla. Inventore iusto iste bla
-                        ...
-                    </p>
-                    <p class="announcement">
-                        <span class="ann-title"></span>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae suscipit, ipsa fu ...
-                    </p>
-                    <p class="announcement">
-                        <span class="ann-title"></span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ad voluptate cupiditate
-                        magnam
-                        vero, eligendi ...
-                    </p>
-                </div>
-            </div>
-            <div id="trending">
-                <p class="main-titles">Trending</p>
-                <div class="side-card">
-                    <a href="" class="trend-link">
-                        <img src="bear.jpg" alt="">
-                        <div class="trend-text">
-                            <p class="et">@tegan</p>
-                            <p class="trend-name">World Peace Builder</p>
-                        </div>
-                    </a>
-                    <a href="" class="trend-link">
-                        <img src="dog.jpg" alt="">
-                        <div class="trend-text">
-                            <p class="et">@kendall</p>
-                            <p class="trend-name">Super Cool Project</p>
-                        </div>
-                    </a>
-                    <a href="" class="trend-link">
-                        <img src="koala.jpg" alt="">
-                        <div class="trend-text">
-                            <p class="et">@morgan</p>
-                            <p class="trend-name">Life Changing App</p>
-                        </div>
-                    </a>
-                    <a href="" class="trend-link">
-                        <img src="mouse.jpg" alt="">
-                        <div class="trend-text">
-                            <p class="et">@alex</p>
-                            <p class="trend-name">No Traffic Maker</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </main>
-</body>
+img {
+  max-width: 100%;
+}
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
 
-</html>
+/************************CSS RESET*****************/
+
+body {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: max-content 1fr;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+}
+
+.grid {
+  display: grid;
+}
+.flex {
+  display: flex;
+}
+.bold {
+  font-weight: bold;
+}
+/*
+svijetla pozadina  background-color: rgb(217, 229, 233);
+tamno siva   color: rgb(35, 35, 35);
+plava   background-color: rgb(36, 148, 182);
+
+
+
+
+*/
+
+/***************************HEADER**********************/
+header {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  padding: 10px 30px;
+  padding-right: min(60px, 5%);
+  box-shadow: 0px 2px 10px 0px #a1a1a1;
+  z-index: 10;
+}
+#first-line {
+  align-items: center;
+  margin-bottom: 20px;
+  color: rgb(35, 35, 35);
+}
+#fl-left {
+  flex-grow: 1;
+  margin-right: 7%;
+  font-size: 20px;
+  align-items: center;
+}
+#fl-right {
+  align-items: center;
+  font-weight: bolder;
+}
+#search {
+  background-color: rgb(217, 229, 233);
+  margin-left: 10px;
+  flex-grow: 1;
+  max-width: 500px;
+  font-size: 11px;
+  border: 0;
+  border-radius: 15px;
+  padding: 5px 10px;
+  color: rgb(35, 35, 35);
+}
+#search:hover,
+#search:active {
+  box-shadow: 0px 2px 10px 0px #a1a1a1;
+}
+#bell,
+#search-icon {
+  font-size: 22px;
+  color: rgb(35, 35, 35);
+}
+#bell:hover {
+  color: #2494b6;
+}
+#maca-small {
+  width: 45px;
+  margin: 0px 20px;
+}
+
+#second-line {
+  align-items: center;
+}
+#hi-name {
+  flex-grow: 1;
+  margin: 0 20px;
+  font-weight: bold;
+}
+#hi {
+  font-size: 12px;
+  padding-bottom: 2px;
+}
+#name {
+  font-size: 20px;
+}
+
+.maca {
+  width: 60px;
+  background-color: rgb(251, 223, 39);
+  border-radius: 50%;
+}
+#header-buttons button {
+  background-color: rgb(36, 148, 182);
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  border-radius: 50px;
+  padding: 7px 0px;
+  border: 2px solid #2494b6;
+  margin: 2px 5px;
+  width: 78px;
+  text-align: center;
+}
+#header-buttons button:hover {
+  color: #2494b6;
+  background-color: white;
+}
+
+/************************NAVIGATION*************************/
+nav {
+  padding: 15px 20px;
+  color: white;
+  background-color: rgb(36, 148, 182);
+  grid-row: 1/3;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+nav li {
+  margin: 15px 0;
+  font-size: 19px;
+  font-weight: 500;
+}
+#logo {
+  font-size: 27px;
+  margin-right: 35px;
+}
+#logo-icon {
+  font-size: 40px;
+  position: relative;
+  top: 5px;
+  margin-right: 15px;
+}
+#menu {
+  margin: 60px 0;
+}
+#menu2 {
+  margin-top: 65px;
+}
+#menu a:hover,
+#menu2 a:hover,
+#logo a:hover {
+  color: rgb(33, 59, 71);
+}
+li .iconify {
+  font-size: 17px;
+  margin-right: 26px;
+  margin-left: 13px;
+}
+/************MAIN****************/
+main {
+  background-color: rgb(225, 234, 237);
+  padding: 20px 20px 20px;
+  padding-right: 28px;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  
+  color: #424242;
+  row-gap: 40px;
+  column-gap: 20px;
+
+  .main-titles {
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #3c3c3c;
+  }
+  .side-card {
+    background-color: white;
+    min-height: 200px;
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0px 2px 10px 0px #a1a1a1;
+  }
+
+  #projects {
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+    #projects-div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+
+      gap: 20px;
+
+      .project-card {
+        background-color: white;
+        min-height: 203px; /************************/
+        border-left: 9px solid hsl(43, 87%, 52%);
+        border-radius: 7px;
+        box-shadow: 0px 2px 10px 0px #a1a1a1;
+        display: flex;
+        flex-flow: column;
+        justify-content: start;
+        padding: 15px;
+        padding-bottom: 10px;
+
+        .pr-title {
+          color: black;
+          font-weight: 500;
+        }
+        .pr-text {
+          margin-top: 2px;
+          font-size: 15px;
+          color: gray;
+        }
+        .pr-buttons {
+          font-size: 20px;
+          flex-grow: 1;
+          align-self: flex-end;
+          display: flex;
+          align-items: flex-end;
+
+          .pr-btn {
+            margin: 0 10px;
+            margin-top: 15px;
+
+            span {
+            }
+          }
+          .iconify {
+          }
+        }
+      }
+    }
+  }
+  #announcements {
+    .announcement {
+      font-size: 13px;
+      color: #818181;
+      font-weight: 400;
+      border-bottom: 1px solid #afafaf;
+      padding: 18px 6px;
+      padding-top: 0;
+    }
+    .announcement:last-child {
+      border: 0;
+    }
+    .ann-title{
+        font-size: 15px;
+        font-weight: 500;
+        color: black;
+        
+
+    }
+  }
+  #trending {
+    margin-top: 25px;
+    .trend-link {
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      img {
+        width: 45px;
+        height: 45px;
+        border-radius: 30px;
+      }
+      .trend-text {
+        margin-left: 18px;
+        font-size: 14px;
+        .et {
+          color: #141414;
+          margin-bottom: 0;
+          font-weight: 500;
+        }
+        .trend-name {
+          color: rgb(123, 123, 123);
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
