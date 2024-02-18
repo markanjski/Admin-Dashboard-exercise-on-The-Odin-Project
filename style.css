@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="shaddow">
+        <div id="first-line" class="flex">
+            <div id="fl-left" class="flex">
+                <span class="iconify" id="search-icon" data-icon="mdi-magnify"></span>
+                <input type="search" name="" id="search">
+            </div>
+            <div id="fl-right" class="flex">
+                <span id="bell" class="iconify" data-icon="mdi-bell-ring-outline"></span>
+                <img id="maca-small" class="maca" src="maca.webp" alt=""> Ted Mcclain
+            </div>
+        </div>
+        <div id="second-line" class="flex">
+            <img class="maca" src="maca.webp" alt="">
+            <div id="hi-name">
+                <p id="hi" class="bold">Hi there,</p>
+                <p id="name" class="bold">Ted Mcclain &#40;@mcclain&#41; </p>
+            </div>
+            <div id="header-buttons">
+                <button type="button">New</button>
+                <button type="button">Upload</button>
+                <button type="button">Share</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div id="logo">
+            <a href=""><span class="iconify" id="logo-icon" data-icon="mdi-view-dashboard"></span>Dashboard</a>
+
+        </div>
+        <div id="menu">
+            <ul>
+
+                <a href="">
+                    <li><span class="iconify" data-icon="mdi-home"></span>Home</li>
+                </a>
+                <a href="">
+                    <li><span class="iconify" data-icon="mdi-card-account-details-outline"></span>Profile</li>
+                </a>
+                <a href="">
+                    <li><span class="iconify" data-icon="mdi-message"></span>Messages</li>
+                </a>
+                <a href="">
+                    <li><span class="iconify" data-icon="mdi-clock-time-three"></span>History</li>
+                </a>
+                <a href="">
+                    <li><span class="iconify" data-icon="mdi-note-multiple"></span>Task</li>
+                </a>
+                <a href="">
+                    <li><span class="iconify" data-icon="mdi-account-group"></span>Communities</li>
+                </a>
+            </ul>
+        </div>
+        <div id="menu2">
+            <ul>
+                <a href="">
+                    <li><span class="iconify" data-icon="mdi-cog"></span>Settings</li>
+                </a>
+                <a href="">
+                    <li><span class="iconify" data-icon="mdi-help-box"></span>Support</li>
+                </a>
+                <a href="">
+                    <li><span class="iconify" data-icon="mdi-shield-check"></span>Privacy</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div id="projects">
+            <p class="main-titles">Your Porjects</p>
+            <div id="projects-div">
+                <div class="project-card">
+                    <p class="pr-title">Super Cool Project</p>
+                    <p class="pr-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, dolorem porro? Nisi
+                        repudiandae tempora earum laboriosam accusantium!
+                    </p>
+                    <div class="pr-buttons">
+                        <a href="" class="pr-btn">
+                            <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                        </a>
+                        <a href="" class="pr-btn">
+                            <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                        </a>
+                        <a href="" class="pr-btn">
+                            <span class="iconify" data-icon="mdi-source-fork"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <p class="pr-title">Less Cool Project</p>
+                    <p class="pr-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dicta laboriosam. Aut
+                        temporibus impedit, in incidunt perferendis sint?
+                    </p>
+                    <div class="pr-buttons">
+                        <a href="" class="pr-btn">
+                            <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                        </a>
+                        <a href="" class="pr-btn">
+                            <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                        </a>
+                        <a href="" class="pr-btn">
+                            <span class="iconify" data-icon="mdi-source-fork"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <p class="pr-title">Impossible App</p>
+                    <p class="pr-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ad id animi minima esse sunt
+                        iure. Lorem, ipsum.
+                    </p>
+                    <div class="pr-buttons">
+                        <a href="" class="pr-btn">
+                            <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                        </a>
+                        <a href="" class="pr-btn">
+                            <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                        </a>
+                        <a href="" class="pr-btn">
+                            <span class="iconify" data-icon="mdi-source-fork"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <p class="pr-title">Easy Peasy App</p>
+                    <p class="pr-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquid fugit accusamus
+                        assumenda voluptas explicabo architecto?
+                    </p>
+                    <div class="pr-buttons">
+                        <a href="" class="pr-btn">
+                            <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                        </a>
+                        <a href="" class="pr-btn">
+                            <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                        </a>
+                        <a href="" class="pr-btn">
+                            <span class="iconify" data-icon="mdi-source-fork"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <p class="pr-title">Ad Blocker</p>
+                    <p class="pr-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro commodi autem nihil tempore
+                        labore, repudiandae nam exercitationem fuga.
+                    </p>
+                    <div class="pr-buttons">
+                        <a href="" class="pr-btn">
+                            <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                        </a>
+                        <a href="" class="pr-btn">
+                            <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                        </a>
+                        <a href="" class="pr-btn">
+                            <span class="iconify" data-icon="mdi-source-fork"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <p class="pr-title">Money Maker</p>
+                    <p class="pr-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda quos porro! Enim
+                        temporibus sequi consequatur ut explicabo! Lorem, ipsum dolor.
+                    </p>
+                    <div class="pr-buttons">
+                        <a href="" class="pr-btn">
+                            <span class="iconify" data-icon="mdi-star-plus-outline"></span>
+                        </a>
+                        <a href="" class="pr-btn">
+                            <span class="iconify" data-icon="mdi-eye-plus-outline"></span>
+                        </a>
+                        <a href="" class="pr-btn">
+                            <span class="iconify" data-icon="mdi-source-fork"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="announcements">
+                <p class="main-titles">Announcements</p>
+                <div class="side-card">
+                    <p class="announcement">
+                        <span class="ann-title"></span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, nulla. Inventore iusto iste bla
+                        ...
+                    </p>
+                    <p class="announcement">
+                        <span class="ann-title"></span>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae suscipit, ipsa fu ...
+                    </p>
+                    <p class="announcement">
+                        <span class="ann-title"></span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ad voluptate cupiditate
+                        magnam
+                        vero, eligendi ...
+                    </p>
+                </div>
+            </div>
+            <div id="trending">
+                <p class="main-titles">Trending</p>
+                <div class="side-card">
+                    <a href="" class="trend-link">
+                        <img src="bear.jpg" alt="">
+                        <div class="trend-text">
+                            <p class="et">@tegan</p>
+                            <p class="trend-name">World Peace Builder</p>
+                        </div>
+                    </a>
+                    <a href="" class="trend-link">
+                        <img src="dog.jpg" alt="">
+                        <div class="trend-text">
+                            <p class="et">@kendall</p>
+                            <p class="trend-name">Super Cool Project</p>
+                        </div>
+                    </a>
+                    <a href="" class="trend-link">
+                        <img src="koala.jpg" alt="">
+                        <div class="trend-text">
+                            <p class="et">@morgan</p>
+                            <p class="trend-name">Life Changing App</p>
+                        </div>
+                    </a>
+                    <a href="" class="trend-link">
+                        <img src="mouse.jpg" alt="">
+                        <div class="trend-text">
+                            <p class="et">@alex</p>
+                            <p class="trend-name">No Traffic Maker</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
